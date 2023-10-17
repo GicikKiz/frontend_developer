@@ -14,7 +14,11 @@
     <meta name="description" content="for one page" />
     <meta name="keyword" content="Html5, Css3, Js, React, Bootstrap5" />
 
+    <!-- jquery -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
 
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -52,23 +56,30 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Dropdown
+                            <i class="fa fa-user fa-sm text-light"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Login</a></li>
+                            <li><a class="dropdown-item" href="#">Register</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li>
+
+                </ul>
+                <!-- button alanı -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        <button class="btn btn-light" onclick="darkModu()"><i
+                                class="fa-sharp fa-regular fa-moon"></i></button>
                     </li>
                 </ul>
+                <!-- search alanı -->
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Arama İçin ..." aria-label="Search">
+                    <input id="tags" class="form-control me-2" type="search" placeholder="Arama İçin ..."
+                        aria-label="Search">
                     <button class="btn btn-outline-warning" type="submit">Ara</button>
                 </form>
             </div>
@@ -122,9 +133,22 @@
     <!-- main end codes -->
 
 
+    <!-- footer -->
+    <footer id="footer_id">
+        <div class="text-center p-5 bg-dark" id="copy_right">
+            2021- <span id="date_id"></span> &copy; BÜTÜN HAKLAR SAKLIDIR.
+        </div>
+        <div class="text-center p-5">İLİNER TEKNOLOJİ</div>
+    </footer>
+    <!-- footer end-->
 
-
-
+    <!-- NOTLAR -->
+    <!-- eger javascript kullanılacaksa "button" kullanın -->
+    <!-- ama eger tıkladığında başka sayfaya gidecekse "a href" kulanın -->
+    <!-- onclick data sı sayfada butona tıkladığında aktif hale gelmesi için kullanılır-->
+    <!-- renk paletindeki sıfır "S" ile başlıyor, siyah ta "S" ile başlıyor, eğer "#000;" bu şekilde kullanılırsa siyah rengi elde etmiş oluruz-->
+    <!-- sitede incele dediğin zaman console kısmından da siteye müdahale edebilirsin, her şeyin başı yegane olan "window" dur. her şeyin temel yapısır.-->
+    <!-- window.document "document bulunduğun sayfadır." -->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">

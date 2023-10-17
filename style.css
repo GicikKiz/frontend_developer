@@ -7,6 +7,11 @@ Author : Derya Tekin
 Date   : 3 /October /2023
 */
 
+/*  root */
+:root{
+    --templateBgColor:rgb(66, 65, 65);
+}
+
 /* Common Property */
 *{
     margin: 0;
@@ -34,7 +39,7 @@ ul{
 }
 
 img{
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
 }
 
@@ -79,6 +84,12 @@ i{
     overflow: hidden;
 }
 
+/* navbar */
+.dark_mode{
+    background-color: var(--templateBgColor);
+    color: #fff;
+}
+
 /* header */
 header{
     background-image: url(./img/header.jpg);
@@ -90,3 +101,10 @@ header{
     padding-top: 3rem;
 }
 
+/* footer */
+footer{
+    min-height: 10rem;
+    width: auto;
+    color: #fff;
+    background-color: black;
+}
