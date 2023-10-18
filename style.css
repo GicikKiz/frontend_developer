@@ -108,3 +108,34 @@ footer{
     color: #fff;
     background-color: black;
 }
+
+/* back top yukarı çıkma butonu*/
+#back_top{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+#back_top:hover{
+    color: #e42ba6;
+}
+
+/* downvote_id aşağı inme butonu*/
+#downvote_top{
+    position: fixed;
+    right: 0; 
+}
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
