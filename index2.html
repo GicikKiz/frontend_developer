@@ -62,7 +62,7 @@
                             <i class="fa fa-user fa-sm text-light"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Login</a></li>
+                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginId">Login</a></li>
                             <li><a class="dropdown-item" href="#">Register</a></li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -201,6 +201,30 @@
 
     <!-- yukarı çıkma butonu -->
     <a href="#navbar_id" id="back_top" class="btn btn-light"><i class='bx bx-upvote'></i></a>
+
+
+
+
+    <!-- Modal Body -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div class="modal fade" id="loginId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+        aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Body
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
