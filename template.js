@@ -24,7 +24,10 @@ $("#date_id").html(date)
 }
 newDate()
 
-
+// jquery cdn kaynak sayfaları
+// 1-jQuery CDN 
+// 2-cdnjs
+// 3-W3Schools
 
 
 
