@@ -47,6 +47,13 @@ body{
 
 /* line-clamp */
 .line-clamp4{
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+}
+
+.line-clamp5{
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     display: -webkit-box;
@@ -54,14 +61,21 @@ body{
 }
 
 .line-clamp8{
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 8;
     -webkit-box-orient: vertical;
     display: -webkit-box;
     overflow: hidden;
 }
 
 .line-clamp10{
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+}
+
+.line-clamp20{
+    -webkit-line-clamp: 20;
     -webkit-box-orient: vertical;
     display: -webkit-box;
     overflow: hidden;
@@ -97,8 +111,19 @@ header{
 /* mainin içindeki parallax */
 #parallax{
     background-color: transparent;
-    background-image: url('./img/parallax.jpg');
+    background-image: url('./img/parallax.png');
+    background-size: cover;
+    height: 30rem;
+    padding: 2rem;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }
+
+#parallax .myHeading{
+    color: #fff;
+}
+
 
 /* footer */
 footer{
