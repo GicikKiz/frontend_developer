@@ -9,7 +9,7 @@ Date   : 3 /October /2023
 
 /*  root */
 :root{
-    --templateBgColor:rgb(66, 65, 65);
+    --templateBgColor:rgb(8, 8, 8);
 }
 
 /* Common Property */
@@ -120,10 +120,27 @@ header{
 
 }
 
+/* baslık kısmına renk verme */
 #parallax .myHeading{
     color: #fff;
 }
 
+/* paragrafı duzenli hale getirme */
+#parallax p{
+    text-align: justify;
+}
+
+
+/* mainin içindeki newspaper*/
+/* paragrafı duzenli hale getirme */
+#newspaper p{
+    text-align: justify;
+} 
+
+/* mainin içinde blog alanı */
+#blog{
+    background-color: rgb(98, 168, 233);
+}
 
 /* footer */
 footer{
@@ -133,23 +150,9 @@ footer{
     background-color: black;
 }
 
-/* back top yukarı çıkma butonu*/
-#back_top{
-    position: fixed;
-    right: 0;
-    bottom: 0;
-}
 
-#back_top:hover{
-    color: #e42ba6;
-}
 
-/* downvote_id aşağı inme butonu*/
-#downvote_top{
-    position: fixed;
-    right: 0; 
-}
-   
+ 
 
 
 
