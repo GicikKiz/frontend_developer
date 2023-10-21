@@ -94,6 +94,12 @@ header{
    font-size: 3rem;
 }
 
+/* mainin içindeki parallax */
+#parallax{
+    background-color: transparent;
+    background-image: url('./img/parallax.jpg');
+}
+
 /* footer */
 footer{
     min-height: 10rem;
