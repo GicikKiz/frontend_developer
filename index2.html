@@ -48,44 +48,65 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index2.html">Anasayfa</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" aria-current="page" href="">Çalışmalarımız</a>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="">Haberler</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="">Yeni Haberler</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="">Blog</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav me-2">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            <i class="fa fa-user fa-sm text-light"></i>
+                            <i class="fa fa-user fa-md text-light"></i>
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginId">Login</a></li>
                             <li><a class="dropdown-item" data-bs-toggle="modal"
-                                    data-bs-target="#registerId">Register</a></li>
+                                    data-bs-target="#registerId">Register</a>
+                            </li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li>
-
                 </ul>
+
+
                 <!-- button alanı -->
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
+                <ul class="navbar-nav me-4 mb-lg-0">
+                    <li class="nav-item ">
                         <button class="btn btn-light" onclick="darkModu()"><i
                                 class="fa-sharp fa-regular fa-moon"></i></button>
                     </li>
                 </ul>
+
                 <!-- search alanı -->
                 <form class="d-flex" role="search">
                     <input id="tags" class="form-control me-2" type="search" placeholder="Arama İçin ..."
                         aria-label="Search">
                     <button class="btn btn-outline-warning" type="submit">Ara</button>
                 </form>
+
             </div>
         </div>
     </nav>
@@ -523,6 +544,8 @@
     <!-- renk paletindeki sıfır "S" ile başlıyor, siyah ta "S" ile başlıyor, eğer "#000;" bu şekilde kullanılırsa siyah rengi elde etmiş oluruz-->
     <!-- sitede incele dediğin zaman console kısmından da siteye müdahale edebilirsin, her şeyin başı yegane olan "window" dur. her şeyin temel yapısır.-->
     <!-- window.document "document bulunduğun sayfadır." -->
+    <!-- bootstap 5'de bır öğeyi sağ tarafa koymak istersek eğer "me-4" örnek olarak dersek sağ tarafa yaslar -->
+    <!-- "ms-3" dersek sağ taraftaki öğeyi sola getirir -->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
