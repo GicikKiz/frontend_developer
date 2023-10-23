@@ -84,8 +84,9 @@ body{
 /* navbar */
 .dark_mode{
     background-color: var(--templateBgColor);
-    color: #fff;
+    color: #fff; 
 }
+
 
 /* header */
 header{
