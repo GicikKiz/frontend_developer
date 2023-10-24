@@ -52,7 +52,8 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index2.html">Anasayfa</a>
+                        <a class="nav-link active" aria-current="page" href="index2.html"
+                            style="color: rgb(98, 168, 233);">Anasayfa</a>
                     </li>
 
                     <li class="nav-item">
@@ -71,7 +72,20 @@
                         <a class="nav-link" aria-current="page" href="">Blog</a>
                     </li>
                 </ul>
-
+                <!-- "language" dil desteği alanı -->
+                <ul class="navbar-nav me-2">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-lg fa-language text-light"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Türkçe</a></li>
+                            <li><a class="dropdown-item" href="#">İngilizce</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- form doldurma alanı -->
                 <ul class="navbar-nav me-2">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -83,10 +97,7 @@
                             <li><a class="dropdown-item" data-bs-toggle="modal"
                                     data-bs-target="#registerId">Register</a>
                             </li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+
                         </ul>
                     </li>
                 </ul>
@@ -546,6 +557,7 @@
     <!-- window.document "document bulunduğun sayfadır." -->
     <!-- bootstap 5'de bır öğeyi sağ tarafa koymak istersek eğer "me-4" örnek olarak dersek sağ tarafa yaslar -->
     <!-- "ms-3" dersek sağ taraftaki öğeyi sola getirir -->
+    <!-- "mx" yatay düzleminde olan "x"  "mx-4" kullanıldıgında iki öğeyi birden sağ tarafa alır.-->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
