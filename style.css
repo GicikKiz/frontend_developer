@@ -87,6 +87,12 @@ body{
     color: #fff; 
 }
 
+/* navbar alanına hover işlemi */
+.navbar-nav .nav-link:hover{
+    color: rgb(98, 168, 233);
+}
+
+
 
 /* header */
 header{
@@ -138,7 +144,7 @@ header{
     text-align: justify;
 } 
 
-/* mainin içinde blog alanı */
+/* mainin içinde blog alanı arka plana renk verme*/
 #blog{
     background-color: rgb(98, 168, 233);
 }
