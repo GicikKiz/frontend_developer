@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>frontend-developer one page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+
+    <!-- responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- SEO -->
+    <meta name="author" content="Derya Tekin" />
+    <meta name="description" content="for one page" />
+    <meta name="keyword" content="Html5, Css3, Js, React, Bootstrap5" />
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+
+    <!-- external css -->
+    <link rel="stylesheet" href="./Css/style.css">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <!-- navbar start codes -->
+            <nav id="navbar_id" class="navbar navbar-expand-lg bg-body-tertiary  navbar-dark bg-dark fixed-top">
+                <div class="container"> <!-- container fluid -->
+                    <a class="navbar-brand" href="#"><i class="fa-brands fa-blogger-b"></i></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index2.html">Anasayfa</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#çalişmalarimiz">Çalışmalarımız</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#haberler">Haberler</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#yeni_haberler">Yeni Haberler</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#blog">Blog</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#contact">İletişim</a>
+                            </li>
+                        </ul>
+                        <!-- "language" dil desteği alanı -->
+                        <ul class="navbar-nav me-2">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fa-solid fa-lg fa-language text-light"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Türkçe</a></li>
+                                    <li><a class="dropdown-item" href="#">İngilizce</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- form doldurma alanı -->
+                        <ul class="navbar-nav me-2">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fa fa-user fa-md text-light"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" data-bs-toggle="modal"
+                                            data-bs-target="#loginId">Login</a></li>
+                                    <li><a class="dropdown-item" data-bs-toggle="modal"
+                                            data-bs-target="#registerId">Register</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                        </ul>
+
+
+                        <!-- button alanı -->
+                        <ul class="navbar-nav me-4 mb-lg-0">
+                            <li class="nav-item ">
+                                <button class="btn btn-light" onclick="darkModu()"><i
+                                        class="fa-sharp fa-regular fa-moon"></i></button>
+                            </li>
+                        </ul>
+
+                        <!-- search alanı -->
+                        <form class="d-flex" role="search">
+                            <input id="tags" class="form-control me-2" type="search" placeholder="Arama İçin ..."
+                                aria-label="Search">
+                            <button class="btn btn-outline-warning" type="submit">Ara</button>
+                        </form>
+
+                    </div>
+                </div>
+            </nav>
+            <!-- end navbar codes -->
+        </div>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <img src="./img/Adsız.png" alt="">
+            <section id="kitap_özeti">
+                <h2 class="text-center ">Kırlangıç Çığlığı</h2>
+                <p>Kırlangıç Çığlığı kitabının konusu yıllar öncesinden “Körebe” davası olarak tamamlanamadan açık kalan
+                    bir
+                    seri katil vakasının yeniden öldürmeye başlaması üzerine kurulmuş. Ahmet Ümit kitabı ile ilgili bir
+                    konuşmasında şöyle demiştir; “Çocuk tacizcilerini öldüren bir seri katil mi daha tehlikeli yoksa
+                    dünya
+                    bu haldeyken ‘aman banane’ deyip kendi keyfine bakan insan mı daha tehlikelidir?”. Kitabı okurken
+                    gerçekten bu ikilemi sık sık hissettiğiniz oluyor. Hatta karakterlerin bile bazen bu ikilemde
+                    kaldığını
+                    görüyoruz. Kitapta “Körebe” adındaki seri katil çocuk tacizcilerini hedef alıyor ve onları hep aynı
+                    ritüelde öldürüyor. Yıllar öncesinde bu vaka yaşanmış fakat yakalanamamış. Bir gün Nevzat
+                    Başkomiser’in
+                    ekibi cinayet mahalline gittiğinde gördüğü manzara karşısında Körebe’nin geri geldiğine karar
+                    veriyorlar. Nevzat Başkomiser eşini ve kızını bir saldırıda kaybetmiştir ve kızı da zamanında bir
+                    taciz
+                    vakasıyla karşı karşıya kalmıştır. Bu nedenle konu oldukça hassas bir hal almaya başlar.
+
+
+                    Körebe kurbanlarını hep çocuk tacizcilerinden seçmektedir. Tacizcileri öldürüp çocuklarla ilgili
+                    mekanlara götürür ve yanlarına bir oyuncak bırakır. Ayrıca kurbanların gözlerini kadife bir göz
+                    bandı
+                    ile bağlar hep sağ kulaklarını kesmektedir. Bu nedenle de adı Körebe olarak yer etmiştir. Oldukça
+                    net ve
+                    ayırt edilebilir bir ritüel olduğu için cinayetler yeniden başladığında herkes Körebe’nin geri
+                    döndüğü
+                    konusunda hem fikir olmuştur.
+
+                    Kitap genel olarak işlenen bu cinayetlerin çözüm aşamalarını ve geçmişle olan bağlantılarını
+                    izleyerek
+                    bir yol haritası çıkarıyor. Olayların tam çözüldüğünü düşündüğünüz noktalarda çok güzel ters köşeler
+                    var. Bu nedenle kitabı okurken heyecanınızı hiç kaybetmiyorsunuz. Körebe’nin işlediği cinayetler ve
+                    yaptığı ritüelin nedeni kitapta detaylıca anlatılıyor. Okumamış kişilerin şevkini kırmamak adına
+                    burada
+                    bahsetmek istemem fakat kitapta en etkileyici bulduğum noktalardan birisi olduğumu söylemem gerekir.
+
+                    Kitabın değindiği diğer sosyal problemlerden biri de Suriyeli mültecilerin sorunları. Gerçekten
+                    bizim
+                    günlük yaşantımıza devam ederken göz ardı ettiğimiz ve çok da farkında olmadığımız bir sorun
+                    aslında.
+                    Ahmet Ümit onların hayatlarına biraz ışık tutmuş. Para uğruna çocuklarından, kendilerinden,
+                    ailelerinden
+                    nasıl vazgeçmek zorunda kaldıklarını ve bu yüzden de başlarına ne kadar talihsiz olaylarından
+                    geldiğinden bahsediliyor. Özellikle de çocukların böylesi tehlikeli bir devirde bu şartlar altında
+                    hayatta kalmaya çalışmasını böyle bir pencereden görmek beni oldukça etkiledi.
+                </p>
+
+            </section>
+        </header>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <!-- external js -->
+    <script src="template.js"></script>
+</body>
+
+</html>
