@@ -34,8 +34,6 @@ console.log(typeof result+" => "+result);*/
 // çif tırnak içindeki değişkene tek tırnak kullanılabilir.
 // var mekan="derya'nın yeri";
 
-// değişkene değer atanmadıysa değişken değeri undefined olarak görülür.
-// document.write(d);
 
 // değişkenin başına rakam konulmaz hata verir.
 /* örnek: 
@@ -71,3 +69,72 @@ console.log(typeof result+" => "+result);
 
 
 
+// dört işlem 
+var number1 =40;
+var number2=5;
+console.log(number1+number2);
+console.log(number1-number2);
+console.log(number1*number2);
+console.log(number1/number2);
+console.log(number1%number2);
+
+// kullanıcıdan almak istersek;
+var userData=prompt("Lütfen sayı giriniz");
+// girilen sayıyı teyit etmek için; fakat sayıları toplanmıyorsa hata vardır. bunun sebebi "prompt datası'n"  dan gelen veri string dir yani yazı olarak bize çıktı olarak verir.
+console.log(userData+45); 
+
+// biz bunu sayıya çevirmek için; "Number" kullanırız.bunun özel adı "cast" demektir
+var userData=Number(prompt("Lütfen sayı giriniz"));
+console.log(userData+45);
+
+// undefined yapısı; // değişkene değer atanmadıysa değişken değeri undefined olarak görülür.
+var result4;
+console.log(result4);
+
+// nan yapısı; rakam girilmesi gereken bazı fonksiyonlarda rakam dışında bir değer girildiği zaman "NAN" değeri ile karşılaşırız
+var result5="asd"/4;
+console.log(result5);
+
+// isNaN yapısı; kullanıcıdan veya bir ifade içerisinden gelen değerin sayısal değer olup olmadığını kontrol edebilmekteyiz.
+
+// Fonksiyon içerisine girilen deger eğer sayısal bir ifade ise false, eğer deger sayısal ifade değilse (NaN)true değerini döndürecektir.
+var result6=4;
+console.log(isNaN(result6));
+
+// Infinity; bir sayıyı sıfıra bölersen sonuç olarak sana Infinity verir. tanımsızdır
+console.log(4/0);
+
+// math (matematik) örnekleri;
+console.log(Math.PI);
+console.log(Math.E);
+// aralarında en küçüğünü bulmak istersek "min" kullanılır, büyüğü için ise "max" kullanılır
+console.log(Math.min(4,1,99,555,-100));
+console.log(Math.max(4,1,99,555,-100));
+
+// sayının karekökünü bulmak için;
+console.log(Math.sqrt(16));
+
+// tam sayı için;
+console.log(Math.abs(-25));
+
+// üslü sayılar için;
+console.log(Math.pow(2,5));
+
+// sayıyı aşağı  yuvarlar için;
+console.log(Math.floor(2.9));
+
+// sayıyı yukarıya yuvarlar için;
+console.log(Math.ceil(3.2));
+
+// ikisinin de yaptığı işe round denilir.
+console.log(Math.round(6.4));
+console.log(Math.round(6.5));
+
+// sinüs hesaplamak için;
+/*console.log(Math.sin(45)); 
+yazmamız yeterli*/
+
+// random ise bize rastgele sayılar üretir
+/*console.log(Math.random()*9+1);
+*/
+console.log(Math.round(Math.random())*9+1);
