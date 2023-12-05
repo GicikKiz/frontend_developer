@@ -138,3 +138,31 @@ yazmamız yeterli*/
 /*console.log(Math.random()*9+1);
 */
 console.log(Math.round(Math.random())*9+1);
+
+// eğer bir değişkene hem sayısal hem de sözel değişken atamaya kalkarsanız "sözel toplama" yapılır.
+// eğer değişkene ikinci değer string ise ilk değeri string olarak görür
+var x=5+"bilimsel";
+console.log(x);
+
+// değişkenler soldan sağa doğru çalışır. eğer değişkene atanan ilk 2 ifade number, üçüncü ifade string ise sonuç yine string olur. (ama ilk iki sayısal değere işlem yapılır)
+var x=5+3+"bilimsel";
+console.log(x);
+
+// binary (ikilik) sistem "0 ve 1" den oluşur. tabanı "2"dir.
+var binary=0b00011;
+console.log(binary);
+
+// octal (sekizlik) sistem "0' dan 7'ye" kadar devam eder.
+var octal=0o00011;
+console.log(octal);
+
+// decimal (onluk) sistemidir. "0'dan 9'a" kadardır.
+var decimal=1234;
+console.log(decimal);
+
+// hexadecimal (16'lık) sistemidir. "0'dan 9'a" kadardır. fakat 10'dan 15'e kadar farklı gösterilir. şu şekildedir;
+// 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F gösterilir
+var hexadecimal=0xff;
+console.log(hexadecimal);
+
+// cast yapısı: bir sayıyı string'e dönüştürme string'i sayıya dönüştürme
